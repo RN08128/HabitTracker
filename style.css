@@ -183,7 +183,7 @@ body>h1 {
 .btn-container {
     display: flex;
     gap: 7px;
-    padding: 0 2px 0 1px;
+    padding: 0 3px 0 1px;
 }
 
 li {
