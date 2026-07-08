@@ -159,6 +159,28 @@ body>h1 {
     background-color: rgba(219, 40, 40, 0.4);
 }
 
+.revert-button{
+    width: 35px;
+    height: 35px;
+    border-radius: 20px;
+    border: none;
+
+    background-image: url(icons/undo.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: var(--donecolor);
+
+    transition-property: width;
+    transition-duration: 300ms;
+    transition-timing-function: ease;
+    transition-delay: 0s;
+}
+
+.revert-button:hover{
+    background-color: var(--donehovercolor);
+    width: 50px;
+}
+
 #task-list {
     list-style: none;
     padding: 0 0 0 8px;
@@ -167,9 +189,9 @@ body>h1 {
     gap: 2px;
 }
 
-#task-list>p {
+#list-container>p {
     text-align: center;
-    margin: 0;
+    margin: 16px 0 0 0;
 }
 
 #list-container {
@@ -221,8 +243,8 @@ li:hover {
 }
 
 @media (max-width: 499px) {
-    #menu-box{
+    #menu-box {
         max-width: 300px;
         width: 90vw;
-    }    
+    }
 }
